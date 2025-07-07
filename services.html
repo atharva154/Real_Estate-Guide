@@ -1,0 +1,954 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Real Estate Guide</title>
+    <!--/google-fonts -->
+    <link
+      href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--//google-fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css" />
+  </head>
+
+  <body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+          <h1>
+            <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+              Real Estate Guide
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="my-2 navbar-nav me-lg-auto my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <div class="dropdown nav-item">
+                <button class="btn nav-link dropdown-toggle"    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Services
+                </button>
+                <ul class="dropdown-menu dropdown-menu-light ">
+                  <li  ><a class="dropdown-item "  href="./services.html">Types Of Property</a></li>
+                  <li><a class="dropdown-item" href="./propertyTax.html">Property Taxes</a></li>
+                  <li><a class="dropdown-item" href="./document.html">Documents Required  </a></li>
+                  
+                </ul>
+              </div>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            
+
+            <!-- //toggle switch for light and dark theme -->
+            <!-- search popup -->
+            <div id="search" class="w3lpop-overlay">
+              <div class="w3lpopup">
+                <form action="#formsearch" method="GET" class="d-flex">
+                  <input
+                    type="search"
+                    placeholder="Search.."
+                    name="search"
+                    required="required"
+                    autofocus
+                  />
+                  <button type="submit">
+                    <span class="fas fa-search"></span>
+                  </button>
+                  <a class="close" href="#formsearch">&times;</a>
+                </form>
+              </div>
+            </div>
+            <!-- /search popup -->
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+        </nav>
+      </div>
+    </header>
+    <!--//Header-->
+    <!-- breadcrumb -->
+    <section class="w3l-about-breadcrumb">
+      <div class="py-5 breadcrumb-bg breadcrumb-bg-about">
+        <div class="container py-lg-5 py-md-4">
+          <div class="pt-5 text-center w3breadcrumb-gids">
+            <div class="w3breadcrumb-right">
+              <ul class="breadcrumbs-custom-path">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">
+                  <span class="mx-2 fas fa-angle-double-right"></span> Services
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--//breadcrumb-->
+    <!--/services-->
+
+    <!-- Property tax  -->
+    <style>
+      @media (max-width: 1179px) {
+        .prop-main {
+          flex-wrap: wrap;
+        }
+        .prop-main > .prop-main-2 {
+          margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+    </style>
+    <!-- services cards -->
+    
+<div class="container">
+<!-- Types of property  -->
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --c-white: #fff;
+    --c-black: #000;
+  
+    --c-ash: #eaeef6;
+    --c-charcoal: #525355;
+    --c-void: #141b22;
+  
+    --c-fair-pink: #ffedec;
+    --c-apricot: #fbc8be;
+    --c-coffee: #754d42;
+    --c-del-rio: #917072;
+  
+    --c-java: #1fcac5;
+  
+    --c-titan-white: #f1eeff;
+    --c-cold-purple: #a69fd6;
+    --c-indigo: #6558d3;
+    --c-governor: #4133b7;
+  }
+  
+  /* body {
+    font-family: "Spline Sans", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--c-ash);
+  } */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 90%;
+    max-width: 1000px;
+    margin: 10vh auto;
+  }
+  
+  .card {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(#4133b7, 0.25);
+    max-width: auto;
+  }
+  
+  .information {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--c-white);
+    padding: 1.5rem;
+  
+    .tag {
+      display: inline-block;
+      background-color: var(--c-titan-white);
+      color: var(--c-indigo);
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.5em 0.75em;
+      line-height: 1;
+      border-radius: 6px;
+      & + * {
+        margin-top: 1rem;
+      }
+    }
+  
+    .title {
+      font-size: 1.5rem;
+      color: var(--c-void);
+      line-height: 1.25;
+      & + * {
+        margin-top: 1rem;
+      }
+    }
+  
+    .info {
+      color: var(--c-charcoal);
+      & + * {
+        margin-top: 1.25rem;
+      }
+      font-size: 19px;
+    }
+  
+    .button {
+      font: inherit;
+      line-height: 1;
+      background-color: var(--c-white);
+      border: 2px solid var(--c-indigo);
+      color: var(--c-indigo);
+      padding: 0.5em 1em;
+      border-radius: 6px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      &:hover,
+      &:focus {
+        background-color: var(--c-indigo);
+        color: var(--c-white);
+      }
+    }
+  
+    .details {
+      display: flex;
+      gap: 1rem;
+      div {
+        padding: 0.75em 1em;
+        background-color: var(--c-titan-white);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.125em;
+        flex-basis: 50%;
+      }
+  
+      dt {
+        font-size: 0.875rem;
+        color: var(--c-cold-purple);
+      }
+  
+      dd {
+        color: var(--c-indigo);
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  
+  .plan {
+    padding: 10px;
+    background-color: var(--c-white);
+    color: var(--c-del-rio);
+  
+    strong {
+      font-weight: 600;
+      color: var(--c-coffee);
+    }
+  
+    .inner {
+      padding: 20px;
+      padding-top: 40px;
+      background-color: var(--c-fair-pink);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .pricing {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--c-apricot);
+      border-radius: 99em 0 0 99em;
+      display: flex;
+      align-items: center;
+      padding: 0.625em 0.75em;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--c-coffee);
+      small {
+        color: var(--c-del-rio);
+        font-size: 0.75em;
+        margin-left: 0.25em;
+      }
+    }
+  
+    .title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: var(--c-coffee);
+      & + * {
+        margin-top: 0.75rem;
+      }
+    }
+  
+    .info {
+      & + * {
+        margin-top: 1rem;
+      }
+    }
+  
+    .features {
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        & + * {
+          margin-top: 0.75rem;
+        }
+      }
+  
+      .icon {
+        background-color: var(--c-java);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--c-white);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+  
+      & + * {
+        margin-top: 1.25rem;
+      }
+    }
+  
+    button {
+      font: inherit;
+      background-color: var(--c-indigo);
+      border-radius: 6px;
+      color: var(--c-white);
+      font-weight: 500;
+      font-size: 1.125rem;
+      width: 100%;
+      border: 0;
+      padding: 1em;
+      &:hover,
+      &:focus {
+        background-color: var(--c-governor);
+      }
+    }
+  }
+  
+</style>
+
+
+<h1 style="text-align: center; margin-top: 70px">Types of Property</h1>
+<div class="cards">
+  <article class="information [ card ]">
+    <h2 class="title">Tangible property</h2>
+    <p class="info">
+      Tangible property has a physical existence and can be touched. This type
+      of property can be moved from one place to another, without causing any
+      damage. From this, we can say that this property is movable in nature.
+      Examples: Cars or other vehicles, books, timber, electronic devices,
+      furniture, etc.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Intangible property</h2>
+    <p class="info">
+      Intangible property does not have any physical existence. These are
+      properties with current or potential value, but no intrinsic value of
+      their own & cannot be touched or felt but holds value. Examples include
+      intellectual property like copyright, patent or GI, stock and bond
+      certificates. Franchises, securities, software & many more.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Movable property</h2>
+    <p class="info">
+      Movable property can be moved from one place to another without causing
+      any damage. These are the legislations which define movable property.
+      Section 2(9) of the Registration Act, 1908: “Movable property” includes
+      standing timber, growing crops and grass, fruit upon and juice in trees,
+      and property of every other description, expect immovable property.
+      Section 22 of Indian Penal Code, 1860: “Movable property” are intended to
+      include corporeal property of every description, except land and things
+      attached to the earth or permanently fastened to anything which is
+      attached to the earth. Section 3(36) of the General Clause Act, 1897:
+      “Movable property” shall mean the property of every description, except
+      immovable property.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Immovable property</h2>
+    <p class="info">
+      Immovable property is one that cannot be moved from one place to another
+      place. This is the property which is attached to the earth or ground.
+      Section 2(6) of the Registration act, 1908 states that an “Immovable
+      property means and includes land, buildings, hereditary allowances, rights
+      to way, lights, ferries, fisheries, or any other benefit to arise out of
+      the land, and things attached to the earth or permanently fastened to
+      anything which is attached to the earth, but not standing timber, growing
+      crops nor grass.” This property of a value of more than Rs. 100/- is
+      needed to be registered for which a registration fee and stamp duty are to
+      be paid. This property can be considered an ancestral joint property.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Public Property</h2>
+    <p class="info">
+      Public property, as we can easily predict, means the property owned by the
+      State for the Indian citizens. It belongs to the public with no claim from
+      an individual. The government or any assigned community generally manages
+      these properties for public utility. A few common examples can be
+      Government hospitals, parks, public toilets,etc.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Private Property</h2>
+    <p class="info">
+      As the name suggests, private property permits a non-government body to
+      own the property. It is property owned by a juristic for their personal
+      use or benefit which can be of any nature tangible or intangible, movable
+      or immovable. Common Examples includes apartments, securities, trademarks,
+      private wells, etc.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Personal Property</h2>
+    <p class="info">
+      The personal property acts like an umbrella which includes all types of
+      property. Individuals own this kind of property, be it either tangible or
+      intangible.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Real property</h2>
+    <p class="info">
+      Real property, also called real estate property, includes land and any
+      development made on such land. This kind of property is covered in
+      immovable property. But why is this covered in immovable property? See,
+      for example, roads, mines, buildings, factories, crops, etc, which are
+      created by development, are all fixed with the land. This is immovable
+      property, any development on it, a further deliberation of immovable
+      property is a real property. Other examples: Building(attached to the
+      earth) using materials like cement, steel, mines, crops,etc.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Corporeal property</h2>
+    <p class="info">
+      Don’t get confused here. Corporeal property is any tangible property that
+      can be touched and felt. If this is similar to tangible property, then why
+      did a separate type of corporeal property come into existence? This is a
+      tangible property but it is mainly the right of ownership in material
+      things of such property. All kinds of tangible property can be considered
+      corporeal property. It can be divided into two categories: movable and
+      immovable property and personal and real property as it is ownership
+      rights.
+    </p>
+  </article>
+
+  <article class="information [ card ]">
+    <h2 class="title">Incorporeal property</h2>
+    <p class="info">
+      Incorporeal property means all kinds of intangible property. Again, then
+      why is such a category brought up? This type of property is also called
+      intellectual property. It is an incorporeal right, meaning having legal
+      rights over things cannot be touched or felt.
+    </p>
+  </article>
+</div>
+
+</div>    
+    <!-- services cards ends -->
+    <div class="container">
+      <br />
+
+      <br />
+      <style>
+        .calc-main-h3 {
+         
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .calc-main-h5 {
+          font-size: 23px;
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        .calc-main-h4 {
+          font-size: 23px;
+          text-align: left;
+          border-radius: 5px;
+          padding: 20px;
+          color: rgb(71, 71, 83);
+          background-color: #c3eaff;
+        }
+        
+        .calc-main-h4:hover{
+           box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+      </style>
+    
+      
+
+      <!-- assesment property -->
+      <style>
+        .asses-h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .asses-list-li { 
+          box-shadow: rgba(10, 20, 30, 0.12) 0px 1px 1px 0px,
+          rgba(14, 30, 37, 0.32) 0px 1px 10px 0px;
+          padding: 20px;
+          margin-bottom: 35px;
+          font-size: 25px;
+          font-weight: 600;
+        }
+
+        .asses-list-li:hover{
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+      </style>
+
+      
+    </body>
+      
+
+      <!-- methods  -->
+      <style>
+        .methods {
+          padding: 10px;
+          margin: 20px 20px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          
+        }
+
+        .methods .method-1 {
+          margin-bottom: 20px;
+          width: 100%;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          height: 400px;
+          background-color: #c3eaff;
+          
+        }
+        .methods .method-1 h4 {
+          text-align: center;
+          margin-bottom: 20px ;
+          margin-top: 20px ;
+          padding: 10px;
+
+        }
+        .methods .method-1 p{
+          text-align: left;
+          padding: 15px;
+          line-height: 2rem;
+        }
+        .methods .method-2 p{
+          text-align: left;
+          padding: 15px;
+          line-height: 2rem;
+        }
+        .methods .method-3 p{
+          text-align: left;
+          padding: 15px;
+          line-height: 2rem;
+        }
+
+        @media  (max-width: 1000px) {
+          .methods  {
+              flex-wrap: wrap;
+          }
+
+          @media (min-width: 1000px) {
+            .method-1 {
+              width: 50%; /* Adjust width for larger screens */
+            }
+          }}
+
+        .methods .method-2 {
+          margin-bottom: 20px;
+          margin-left: auto;
+          width: 100%;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          height: 400px;
+          background-color: #c3eaff;
+
+        }
+        .methods .method-2 h4 {
+          margin-bottom: 20px;
+          text-align: center;
+          margin-top: 20px ;
+          padding: 10px;
+        }
+
+        .methods .method-3 {
+          margin-bottom: 20px;
+          width: 100%;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          height: 400px;
+          background-color: #c3eaff;
+          height: 500px;
+        }
+        .methods .method-3 h4 {
+          text-align: center;
+          margin-bottom: 20px ;
+          margin-top: 20px ;
+          padding: 10px;
+        }
+
+        .methods-main h3 {
+          font-size: 35px;
+          text-align: center;
+          margin-top: 90px;
+        }
+        .grid {
+          max-width: 80vw;
+          margin: 0 auto;
+          padding: 0;
+        }
+        
+        .grid__item {
+          grid-column: 3 / -3;
+          width: 100%;
+          direction: ltr;
+        }
+        
+        hr {
+          display: block;
+          clear: both;
+          width: 33%;
+          height: 0.1rem;
+          margin: 3em auto;
+          padding: 0;
+          border: 0;
+          border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .sketch-rule {
+          width: 100%;
+          height: 0.4em;
+          border: 0;
+          background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 119 6'%3E%3Cpath d='M119 3.8c-60 2.5-33.5-7-119 0' fill='none' stroke='%231d2d35' stroke-width='2'/%3E%3C/svg%3E")
+            center/5em 100% repeat-x;
+        }
+        
+      </style>
+
+     
+        
+       
+       
+     
+        
+      </div>
+    </section>
+    </div>
+
+     
+    <!-- Property tax ends -->
+    
+
+    <!--  Reservation on land and some other important facts -->
+    <div class="container">
+      <h3  id="main-reservation" style="text-align: center;">Reservation on Land and some other important facts</h3><br>
+      <p style="font-weight: 600;">There are reservations on land by the government to provide public Government facilities like to make Garden, to plant trees, for transport facilities, for health care services, etc… </p><br><br>
+
+
+      <h4>Q. What is the way to find out when & how much reservation was held by government on my land? <br>Ans.<p>The process for finding out when and how much reservation was held by the Government on your land can vary depending on the region where land is located. Here are some general steps you can take : <br>
+       1.Check the land records :
+              The first step is to check the land records for your property. Land records are official documents that provide information about the ownership and status of land. Land records are maintained by the government and you can access them by vising the relevant land registry office. <br> 
+        2. Look for reservation or encumbrances:
+              When you review the Land records, look for any reservations or encumbrances on your property. These may include easements, zoning restrictions or other types of reservation that limit how you can use land.  
+        3.Check with local authorities : 
+              If you are unable to find information about the reservation in the land records you may need to contact the local authorities, such as the planning department or land use board, to inquire about any restrictions or reservation on your property. 
+     <br>   4.Consult with a legal professional:
+              If you are still unsure about the reservation status of your property, you may want to consult with a legal professional who specializes in the property law. They can review the land records and other relevant documents and provide guidance on how to proceed.
+        </p></h4>
+<br><br>
+
+
+
+
+ <h4><img src="assets\images\star.png" height="22px" style="align-items:center;margin-bottom:8px;justify-content:center;" width="22px" alt=""> 	Things to be check for validating whether the property is Nil or not</h4>
+
+ 
+        <ol  style="font-size: 21px; font-weight:600;line-height:27px;
+        ">
+          <li style="list-style: square;">To check that is there any Reservation of land for housing to economically weaker sections and low income groups.</li>
+          <li style="list-style: square;">	Check that the property is not reserved by Government.</li>
+          <li style="list-style: square;">		NOC issued by Municipal Corporation.</li>
+          <li style="list-style: square;">		Statements from various Banks.</li>
+          <li style="list-style: square;">		7/12 Extract (Utara).</li>
+          <li style="list-style: square;">	Encumbrance Certificate.</li>
+          <li style="list-style: square;">		To check for accurate area of land.</li>
+          <li style="list-style: square;">	Also check whether the property is NA or not.</li>
+          <li style="list-style: square;">	To Check the city survey Utara.</li>
+        </ol>
+
+       
+        <br><br>
+
+
+        <style>
+          .land-cards{
+            display: flex;
+          }
+          .land-card-1{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            margin-right: 12px;
+          }
+          .land-card-2{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          }
+
+          @media (max-width: 1250px) {
+            .land-cards{
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        </style>
+
+        <div class="land-cards">
+          <div class="land-card-1"> 
+            <h4><img src="assets\images\star.png" height="22px" style="align-items:center;margin-bottom:8px;justify-content:center;" width="22px" alt=""> 	 	Check if the Land has the approval of the Revenue Department of the government <br> <p>The use of Non-agricultural land for industrial, commercial, or residential use needs to be approved by the district collector. This can be checked on the 7/12 extract of the land where “अकृषीक” in Marathi should be specified beside the survey number of 
+            the Land. You can ask the developer to show you the 7/12 extract of the plot.</p></h4>
+          </div>
+          <br><br>
+          <div class="land-card-2"> <h4> 	<img src="assets\images\star.png" height="22px" style="align-items:center;margin-bottom:8px;justify-content:center;" width="22px" alt=""> 	Check if the N.A. layout has the approval of the District’s Town Planning authority <br> <p>Even if the Land has the approval of the district collector, the N.A. plot layout has the approval of the district’s Town Planning authority. This authority ensures open space, basic amenities, correct demarcation, proper road access, and more. You can ask the developer to show you the original layout plan which will have the approval of the Town planning approval along with the signature and stamp.</p></h4>
+          </div>
+          
+        </div>
+
+     
+
+      <br><br>
+
+     
+      
+
+        <br><br>
+
+       
+        <br><br>
+    </div>
+
+    <!-- cares to be taken  -->
+    
+    <!-- cares to be taken ends -->
+
+    <!--  -->
+
+    <!--  -->
+    <!--  Reservation on land and some other important facts ends -->
+
+    <!-- //w3l-pricing-->
+    <!--/w3l-footer-29-main-->
+    <footer class="w3l-footer-29-main">
+      <div class="py-5 footer-29">
+        <div class="container py-lg-4">
+          <div class="mb-3 row align-items-center" >
+            <h2 class="sign-left col-lg-7" >
+              Enhance Your Property Portfolio with Our Services and Join Our Community to Accelerate Business Growth.
+            </h2>
+            
+          </div>
+
+          <div class="mt-4 row footer-top-29 mt-md-5">
+            
+            <!-- <div class="mt-5 col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0">
+              <h6 class="footer-title-29">Links</h6>
+              <div class="footer-listw3-grids">
+                <ul class="footer-listw3">
+                  <li ><a href="./team.html" >Our Team</a></li>
+                  
+                </ul>
+              </div>
+            </div> -->
+            
+            <div class="mt-5 col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0">
+              <h6 class="footer-title-29">Services</h6>
+              <div class="footer-listw3-grids">
+                <ul class="footer-listw3">
+                  <li><a href="./services.html">Types Of Property </a></li>
+                  <li><a href="./services.html">Property Taxes </a></li>
+                  <li><a href="./services.html">Documents Required </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="mt-5 col-lg-4 col-md-6 footer-list-29 footer-4 mt-lg-0 ps-lg-5"
+            >
+              <h6 class="footer-title-29">Keep Connected</h6>
+              <p>Stay informed with our weekly newsletter for essential real estate guides and updates.</p>
+
+              <form action="#" class="subscribe" method="post">
+               
+              </form>
+              <div class="mt-4 main-social-footer-29">
+                <a href="#facebook" class="facebook"
+                  ><span class="fab fa-facebook-f"></span
+                ></a>
+                <a href="#twitter" class="twitter"
+                  ><span class="fab fa-twitter"></span
+                ></a>
+                <a href="#instagram" class="instagram"
+                  ><span class="fab fa-instagram"></span
+                ></a>
+
+                <a href="#linkd" class="linkd"
+                  ><span class="fab fa-linkedin-in"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
+      
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+            ) {
+              document.getElementById("movetop").style.display = "block";
+            } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- //move top -->
+    </footer>
+    <!--//footer-9 -->
+    <!-- Js scripts -->
+    <!-- Template JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!-- MENU-JS -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+      $(function () {
+        $(".navbar-toggler").click(function () {
+          $("body").toggleClass("noscroll");
+        });
+      });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- //bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
